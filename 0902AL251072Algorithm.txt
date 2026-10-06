@@ -1,20 +1,7 @@
 Algorithm: Merge Two Sorted Linked Lists
 
-Input: Two sorted linked lists (e.g., L1 and L2 containing values like 10, 20, 25, 40, 50, 70, 80).
-Output: A single merged sorted linked list.
-
-1. Start with the head pointers of both sorted lists, L1 and L2.
-2. Create a dummy node to act as the start of the merged list, and a pointer 'current' pointing to dummy.
-3. While both L1 and L2 are not NULL:
-   a. Compare the data of L1 and L2.
-   b. If L1->data <= L2->data:
-        - Attach L1 to current->next.
-        - Move L1 to L1->next.
-   c. Else:
-        - Attach L2 to current->next.
-        - Move L2 to L2->next.
-   d. Move current to current->next.
-4. If L1 is not NULL, attach the rest of L1 to current->next.
-5. If L2 is not NULL, attach the rest of L2 to current->next.
-6. The merged list starts at dummy->next.
-7. Stop.
+1. Initialize head pointers of both sorted lists, L1 and L2.
+2. Compare the current nodes: pick the smaller node and add it to the merged list.
+3. Advance the pointer of the chosen list.
+4. Repeat steps 2 and 3 until one list becomes NULL.
+5. Append the remaining elements of the non-empty list to the merged list and return the head.
