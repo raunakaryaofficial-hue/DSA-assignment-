@@ -1,0 +1,15 @@
+Algorithm:
+
+1.Start with the first node of both Linked List L1 and 12
+
+2. Compare the data of the current nodes of L1 and 12.
+
+3. Select the node having the smaller value on a add it to the merged List.
+
+4. Move the pointer of the List from which the Smaller node was selected.
+
+5. Repeat steps 2-4 until any one of the two Lists become empty.
+
+6. Add all the remaining nodes of non empty List to the merged List.
+
+7. List is the required sorted linked The resulting List is List
